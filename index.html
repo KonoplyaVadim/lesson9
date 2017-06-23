@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cake</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/cake2.js"></script>
+</head>
+<body>
+<div class="row">
+    <h1 class="col-sm-offset-2">Заказ торта</h1>
+</div>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="Name" class="col-sm-2 control-label">Имя</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="fName" id="Name" placeholder="Имя">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-4">
+            <input type="email" class="form-control" name="email" id="Email" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Phone" class="col-sm-2 control-label">Телефон</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="phone" id="Phone" placeholder="Телефон">
+        </div>
+    </div>
+    <div class="radio col-sm-offset-2">
+        <label>
+            <input type="radio" name="optionsRadios" id="pickup" value="option1" checked>
+            самовывоз
+        </label>
+    </div>
+    <div class="radio col-sm-offset-2">
+        <label>
+            <input type="radio" name="optionsRadios" id="courier" value="option2">
+            курьер
+        </label>
+    </div>
+    <div class="form-group">
+    <label for="size" class="col-sm-2 control-label" style="margin-top: 15px">Размер</label>
+    <select class="form-control col-sm-4" id="size" style="width: 508px; margin-left: 15px; margin-top: 15px">
+        <option id="small">Маленький</option>
+        <option id="middle">Средний</option>
+        <option id="big">Большой</option>
+    </select>
+    </div>
+    <div class="form-group">
+        <label for="Price" class="col-sm-2 control-label">Стоимость</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name="price" id="Price" placeholder="Стоимость">
+        </div>
+        <div class="col-sm-2">
+            <input class="btn btn-default" type="button" id="calculate" value="Вычислить стоимость">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" id="buy">Заказать</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
